@@ -3,29 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+    <title>Deeptanil Debroy - Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li class="li"><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Deeptanil Debroy</h1>
+            <p>Software Developer Engineer (Web Development)</p>
+        </div>
     </header>
 
-    <main>
-        <h2>Home Page Content</h2>
-        <p>This is the content of the home page.</p>
-    </main>
+
+    <div class="profile-picture-container">
+        <img src="/src/assets/GithubProfilePicture.jpg" alt="Profile Picture">
+    </div>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with a strong foundation in C++, Java, HTML/CSS, JavaScript, and SQL.
+            Currently pursuing B.Tech in Computer Science and Engineering at Brainware University, Barasat.
+        </p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Todo Application</h3>
+            <p>
+                Built a simple Todo Application using ReactJS. Used HTML, CSS, JavaScript for frontend development.</br>
+                Tools : npm, Babel-Webpack, Prettier, and ESLint. </br>
+                IDE: Visual Studio Code.
+            </p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+
+    <section id="certifications" class="container">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Smart-India Hackathon (SIH), 2022 - Participation</li>
+            <li>Industrial Training in Frontend Development, 2023</li>
+        </ul>
+    </section>
 
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <div class="container">
+            <p>Contact me at: deeptanild4418@gmail.com</p>
+            <p>Find me on GitHub: <a href="https://github.com/deeptanildebroy" target="_blank">deeptanildebroy</a></p>
+        </div>
     </footer>
-    <button onclick="func()">Click</button>
-    <script src="/src/js/index.js"></script>
 </body>
 </html>
