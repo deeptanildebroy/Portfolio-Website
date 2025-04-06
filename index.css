@@ -91,7 +91,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 100px 0;
+    padding: 35px 35px 0;
     animation: 1s animate 0.5s forwards;
     opacity: 0;
     color: #fff;
@@ -145,17 +145,19 @@ header nav li{
     color: #fff;
 }
 
-.banner-area .image-area{
+.banner-area .image-area {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
     z-index: -1;
-    background: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: #000000;
     background-position: center center;
-}
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  
 
 .banner-area h1{
     margin-bottom: 15px;
@@ -206,6 +208,33 @@ header nav li{
         padding: 15px 40px;
     }
     
+}
+
+.dynamic-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fe1e4f;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    padding-right: 5px;
+    animation: blink 0.8s infinite;
+}
+
+#theme-toggle{
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background: #fe1e4f;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .info-area{
@@ -327,6 +356,8 @@ p.socials a{
 .contact-info input{
     width: 100%;
     height: 50px;
+    border-radius: 25px;
+    border: none;
     margin-bottom: 25px;
     padding: 15px;
 }
@@ -334,6 +365,7 @@ p.socials a{
 .contact-info textarea{
     width: 100%;
     padding: 15px;
+    border-radius: 25px;
     border: none;
     margin-bottom: 25px;
 }
@@ -442,4 +474,241 @@ footer p a{
         text-align: center;
         margin-bottom: 20px;
     }
+}
+
+
+/* ==================== */
+/* Dark Theme Styles (White BG/Black Text) */
+/* ==================== */
+
+body.light-mode {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+  }
+  
+  /* Header */
+  body.light-mode header {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Text Colors */
+  body.light-mode section h3.header-text,
+  body.light-mode section p,
+  body.light-mode .banner-area,
+  body.light-mode .banner-area h1,
+  body.light-mode .banner-area h3,
+  body.light-mode .banner-area h5 {
+    color: #000000; /* Black text */
+  }
+  
+  /* Keep accent colors red */
+  body.light-mode section h3.header-text span,
+  body.light-mode header h2 a span,
+  body.light-mode .banner-area h1 span,
+  body.light-mode footer p a,
+  body.light-mode .socials-2 a i {
+    color: #fe1e4f;
+  }
+  
+  /* Sections Background */
+  body.light-mode .info-area,
+  body.light-mode .skills-area,
+  body.light-mode .projects-area,
+  body.light-mode .contact-area,
+  body.light-mode .newsletter,
+  body.light-mode footer {
+    background-color: #ffffff;
+  }
+  
+  /* Cards */
+  body.light-mode .single-skill {
+    background-color: #f8f8f8;
+    color: #000000;
+  }
+  
+  body.light-mode .single-skill h2 {
+    color: #000000;
+  }
+  
+  body.light-mode .single-skill:hover {
+    background: #fe1e4f;
+    color: #ffffff;
+  }
+  
+  body.light-mode .single-skill:hover h2 {
+    color: #ffffff;
+  }
+
+  .btn{
+    background-color: #fe1e4f;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+  
+  /* Forms */
+  body.light-mode .contact-info input,
+  body.light-mode .contact-info textarea,
+  body.light-mode .newsletter form input {
+    background-color: #101010;
+    color: #fff;
+    border: none;
+  }
+
+  body.light-mode .contact-info input::placeholder,
+  body.light-mode .contact-info textarea::placeholder,
+  body.light-mode .newsletter form input::placeholder{
+    color: #f8f8f8;
+
+  }
+
+  
+  /* Social Icons */
+  body.light-mode p.socials a {
+    background: #fe1e4f;
+    color: #ffffff;
+  }
+  
+  /* Buttons */
+  body.light-mode a.btn {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  body.light-mode a.btn:hover {
+    background-color: #fe1e4f;
+    color: #ffffff;
+  }
+  
+  /* Theme Toggle */
+  body.light-mode #theme-toggle {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /* Lightbox */
+  body.light-mode .lightbox {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  body.light-mode .close {
+    color: #000000;
+  }
+  
+  /* Smooth transitions */
+  body.light-mode,
+  body.light-mode header,
+  body.light-mode .single-skill {
+    transition: all 0.3s ease;
+  }
+
+  /* Dark Mode Header Styles */
+body.light-mode header {
+    background-color: #ffffff; /* White background */
+  }
+  
+  body.light-mode header h2 a {
+    color: #000000; /* Black text */
+  }
+  
+  body.light-mode header h2 a span {
+    color: #fe1e4f; /* Keep red accent */
+  }
+  
+  body.light-mode nav ul li a {
+    color: #000000; /* Black text */
+    opacity: 0.8;
+  }
+  
+  body.light-mode nav ul li a:hover {
+    color: #fe1e4f; /* Red on hover */
+    opacity: 1;
+  }
+  
+  body.light-mode #theme-toggle {
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White icon */
+  }
+  
+  body.light-mode #theme-toggle:hover {
+    background-color: #fe1e4f; /* Red on hover */
+    color: #ffffff;
+  }
+  
+  /* Animation remains the same */
+  body.light-mode header {
+    animation: 1s animate 0.5s forwards;
+  }
+
+  /* Dark Mode Footer Styles */
+body.light-mode footer {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border-top: 1px solid #e0e0e0; /* Light gray border */
+  }
+  
+  body.light-mode .copyright {
+    color: #000000; /* Black text */
+  }
+  
+  body.light-mode .socials-2 span {
+    color: #000000; /* Black text */
+  }
+  
+  body.light-mode .socials-2 a i {
+    color: #fe1e4f; /* Red icons */
+    transition: all 0.3s ease;
+  }
+  
+  body.light-mode .socials-2 a:hover i {
+    color: #000000; /* Black on hover */
+    transform: scale(1.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1000px) {
+    body.light-mode footer {
+      flex-direction: column;
+    }
+    body.light-mode footer p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  body.light-mode .banner-area .image-area {
+    background: #ffffff; /* White background */   
+  }
+
+body.light-mode .newsletter form .btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fe1e4f;
+    color: #fff;
+    opacity: 1;
+    border-radius: 50px;
+    padding: 20px 40px;
+}
+
+body.light-mode .newsletter form .btn:hover{
+    opacity: 1;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+body.light-mode .contact-info input[type="submit"]{
+    background: #fe1e4f;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
 }

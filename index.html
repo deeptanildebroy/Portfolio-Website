@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Personal Portfolio</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <h2>
         <a href="#Home">Dev<span>Roy</span></a>
@@ -24,45 +25,55 @@
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" title="Toggle Theme">🌙</button>
     </header>
 
-    <section class="banner-area">
+    <!-- Banner Section -->
+    <section class="banner-area" id="Home">
       <div class="image-area"></div>
       <div class="banner-text">
-        <h5>Welcome to our Personal Portfolio</h5>
-        <h1>Deeptanil <span>Debroy</span></h1>
-        <h3>Web Devoloper</h3>
-        <a class="btn">Know More</a>
+        <h5>Welcome to My Digital Space</h5>
+        <h1>Hi, I'm <span>Deeptanil Debroy</span></h1>
+        <h3><span class="dynamic-text"></span></h3>
+        <a href="#Info" class="btn">Know More</a>
       </div>
     </section>
 
-    <section class="info-area" id="#Info">
-      <h3 class="header-text">I'm <span>Deeptanil</span></h3>
-      <p>B.Tech(Computer Science and Engineering)</p>
+    <!-- Info Section -->
+    <section class="info-area" id="Info">
+      <h3 class="header-text">About <span>Me</span></h3>
+      <p>B.Tech Computer Science and Engineering</p>
       <p class="info">
-        An Undergraduate(Final Year) student, specializing in Web Development.
-        Currently pursuing my B.Tech in Computer Science and Engineering at
-        Brainware University, I boast a stellar CGPA of 9.4. Leveraging my
-        academic foundation, I excel in languages such as C, C++, Java,
-        HTML/CSS, JavaScript, and SQL.
+        A passionate and driven final-year undergraduate student specializing in
+        <strong>Web Development</strong> and <strong>Software Engineering</strong>. Currently pursuing my B.Tech at
+        <strong>Brainware University</strong>, I have maintained an impressive <strong>CGPA of 9.4</strong>, reflecting
+        my dedication to academic excellence and continuous learning.
+      </p>
+      <p class="info">
+        With a strong foundation in programming languages such as <strong>C, C++, Java, Python, and SQL</strong>, I
+        thrive on solving complex problems and building innovative solutions. My expertise extends to modern web
+        technologies like <strong>HTML, CSS, JavaScript, and frameworks such as React and Node.js</strong>, enabling me
+        to create dynamic and user-friendly web applications.
+      </p>
+      <p class="info">
+        I am deeply passionate about leveraging technology to create meaningful impact and am always eager to explore new
+        challenges and opportunities in the tech world. Whether it's developing scalable applications or contributing to
+        open-source projects, I am committed to pushing boundaries and delivering excellence.
       </p>
       <p class="socials">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/deeptanildebroy"
-          ><i class="fa fa-github" aria-hidden="true"></i
-        ></a>
+        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/deeptanildebroy" target="_blank" title="GitHub">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
       </p>
     </section>
 
+    <!-- Skills Section -->
     <section class="skills-area" id="Skills">
-      <h3 class="header-text">Our <span>Skills</span></h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-        optio?
-      </p>
-
+      <h3 class="header-text">My <span>Skills</span></h3>
       <div class="content-area">
         <div class="single-skill">
           <div class="icon-area">
@@ -70,18 +81,16 @@
           </div>
           <h2>Programming Languages</h2>
           <p>
-            Proficient in programming languages, such as C, C++,
-            Java, and Python.
+            Proficient in programming languages, such as C, C++, Java, and Python.
           </p>
         </div>
         <div class="single-skill">
           <div class="icon-area">
             <i class="fa fa-chrome" aria-hidden="true"></i>
           </div>
-          <h2>Web Devolopment</h2>
+          <h2>Web Development</h2>
           <p>
-            Familiar with web development technologies such as HTML, CSS, and
-            JavaScript.
+            Familiar with web development technologies such as HTML, CSS, and JavaScript.
           </p>
         </div>
         <div class="single-skill">
@@ -90,59 +99,38 @@
           </div>
           <h2>Database Management</h2>
           <p>
-            Knowledge about database systems such as MySQL, PostgreSQL, or
-            MongoDB.
+            Knowledge about database systems such as MySQL, PostgreSQL, or MongoDB.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section class="projects-area" id="Projects">
-      <h3 class="header-text">Our<span> Projects </span></h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-        optio?
-      </p>
+      <h3 class="header-text">My <span>Projects</span></h3>
       <ul class="content-area">
         <li>
           <img
             src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg"
-            alt="1"
+            alt="Project 1"
           />
         </li>
         <li>
           <img
             src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg"
-            alt="2"
+            alt="Project 2"
           />
         </li>
         <li>
           <img
             src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg"
-            alt="3"
+            alt="Project 3"
           />
         </li>
-        <!-- <li>
-          <img
-            src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg"
-            alt="4"
-          />
-        </li>
-        <li>
-          <img
-            src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg"
-            alt="5"
-          />
-        </li>
-        <li>
-          <img
-            src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg"
-            alt="6"
-          />
-        </li> -->
       </ul>
     </section>
 
+    <!-- Newsletter Section -->
     <section class="newsletter">
       <h3 class="header-text">Sub<span>scribe</span></h3>
       <form>
@@ -151,11 +139,10 @@
       </form>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact-area" id="Contact">
-      <h3 class="header-text">Contact <span>Us</span></h3>
-      <p>
-        You can reach us 
-      </p>
+      <h3 class="header-text">Contact <span>Me</span></h3>
+      <p>Feel free to reach out to me for collaborations or inquiries.</p>
       <div class="content-area">
         <div class="contact-info">
           <input type="text" placeholder="Your Name..." />
@@ -165,25 +152,28 @@
             id=""
             cols="30"
             rows="3"
-            placeholder="Your Queries..."
+            placeholder="Your Message..."
           ></textarea>
-          <input type="submit" value="submit" />
+          <input type="submit" value="Submit" />
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-
       <p class="socials-2">
-       <span>Follow us on :</span>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/deeptanildebroy"
-          ><i class="fa fa-github" aria-hidden="true"></i
-        ></a>
+        <span>Follow me on:</span>
+        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/deeptanildebroy" target="_blank" title="GitHub">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
       </p>
-      <p class="copyright">Copyright &copy; 2024</p>
+      <p class="copyright"></p>
     </footer>
+
+    <!-- Script -->
   </body>
+  <script src="script.js"></script>
 </html>
